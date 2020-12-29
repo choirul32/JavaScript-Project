@@ -1,0 +1,47 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    padding: 30px 200px;
+}
+
+.key_button{
+    display: grid;
+    height: 500px;
+    grid-template-areas:
+        'display display display display'
+        'plus_ subtract_ multiply_ divide_'
+        '. . . equal'
+        '. . . equal'
+        '. . . equal'
+        '. . . equal';
+}
+
+.equal{
+    grid-area: equal;
+}
+
+.display{
+    grid-area: display;
+    font-size: 100px;
+    height: 30px;
+    text-align: right;
+}
+
+.plus{
+    grid-area: plus_;
+}
+
+.subtract{
+    grid-area: subtract_;
+}
+
+.multiply{
+    grid-area: multiply_;
+}
+
+.divide{
+    grid-area: divide_;
+}
